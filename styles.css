@@ -5,8 +5,8 @@
   --border: rgba(255, 255, 255, 0.09);
   --text: #f4f4f7;
   --muted: #a3a3b2;
-  --violet: #8b5cf6;
-  --cyan: #22d3ee;
+  --accent-a: #1f5cf0;
+  --accent-b: #0a9bff;
   --radius: 18px;
   --gutter: 16px;
   color-scheme: dark;
@@ -35,7 +35,7 @@ a {
 }
 
 :focus-visible {
-  outline: 2px solid var(--violet);
+  outline: 2px solid var(--accent-a);
   outline-offset: 3px;
   border-radius: 6px;
 }
@@ -48,7 +48,7 @@ a {
 }
 
 .gradient-text {
-  background: linear-gradient(100deg, var(--violet), var(--cyan));
+  background: linear-gradient(100deg, var(--accent-a), var(--accent-b));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -81,9 +81,10 @@ a {
   letter-spacing: -0.01em;
 }
 
-.logo svg {
-  width: 20px;
-  height: 28px;
+.logo img {
+  display: block;
+  width: 30px;
+  height: 27px;
 }
 
 .nav {
@@ -154,7 +155,7 @@ a {
   inset: -40% -10% auto auto;
   width: 520px;
   height: 520px;
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.28), transparent 65%);
+  background: radial-gradient(circle, rgba(31, 92, 240, 0.32), transparent 65%);
   pointer-events: none;
 }
 
@@ -174,7 +175,7 @@ a {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: linear-gradient(100deg, var(--violet), var(--cyan));
+  background: linear-gradient(100deg, var(--accent-a), var(--accent-b));
 }
 
 h1 {
@@ -255,7 +256,7 @@ h2 {
   border-color: transparent;
   background:
     linear-gradient(var(--surface), var(--surface)) padding-box,
-    linear-gradient(140deg, var(--violet), var(--cyan)) border-box;
+    linear-gradient(140deg, var(--accent-a), var(--accent-b)) border-box;
   border: 1px solid transparent;
 }
 
@@ -309,8 +310,8 @@ h2 {
   top: 0.55em;
   width: 10px;
   height: 6px;
-  border-left: 2px solid var(--cyan);
-  border-bottom: 2px solid var(--cyan);
+  border-left: 2px solid var(--accent-b);
+  border-bottom: 2px solid var(--accent-b);
   transform: rotate(-45deg);
 }
 
@@ -321,8 +322,8 @@ h2 {
   border-radius: 999px;
   font-size: 12px;
   font-weight: 600;
-  background: rgba(139, 92, 246, 0.16);
-  color: #c4b5fd;
+  background: rgba(10, 155, 255, 0.14);
+  color: #7cc4ff;
 }
 
 .price-note {
