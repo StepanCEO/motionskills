@@ -363,6 +363,38 @@ h2 {
   color: var(--muted);
 }
 
+/* Requisites */
+.requisites {
+  display: grid;
+  gap: 12px;
+  max-width: 640px;
+  margin: 32px 0 0;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.requisites div {
+  display: grid;
+  gap: 2px;
+}
+
+@media (min-width: 640px) {
+  .requisites div {
+    grid-template-columns: 140px 1fr;
+    gap: 16px;
+  }
+}
+
+.requisites dt {
+  color: var(--muted);
+}
+
+.requisites dd {
+  margin: 0;
+}
+
 /* Steps */
 .steps {
   display: grid;
