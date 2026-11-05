@@ -14,7 +14,13 @@
       content="Пакеты дизайн-проектов для создания видеороликов с помощью Claude. От 490 ₽."
     />
     <meta property="og:type" content="website" />
-    <meta name="theme-color" content="#0b0b10" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
     <link rel="icon" href="logo.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="stylesheet" href="styles.css" />
@@ -32,35 +38,83 @@
           <a href="#how-to-buy">Как купить</a>
           <a href="#contacts">Контакты</a>
         </nav>
+        <a class="btn btn-primary btn-sm header-cta" href="#pricing">Выбрать пакет</a>
       </div>
     </header>
 
     <main>
       <section class="hero">
         <div class="container">
-          <p class="eyebrow">Видео с помощью Claude</p>
           <h1>
-            Готовые дизайн-проекты для создания
-            <span class="gradient-text">видеороликов с помощью Claude</span>
+            Готовые <span class="nowrap">дизайн-проекты</span>
+            <span class="dim">для видео с помощью Claude.</span>
           </h1>
           <p class="lead">
-            Хотите создавать стильные видеоролики с помощью ИИ, но не начинать каждый раз с нуля? В
-            MotionSkills можно приобрести готовые дизайн-проекты и собирать на их основе собственные
-            видео с помощью Claude.
+            Стиль, анимации, звуки и шрифты уже собраны. Берите проект — и сразу делайте свой ролик
+            для Reels, Shorts и TikTok.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#pricing">Выбрать пакет</a>
-            <a class="btn btn-ghost" href="#how-to-buy">Как это работает</a>
+            <a class="btn btn-secondary" href="#contents">Что внутри проекта</a>
           </div>
+
+          <div class="showcase" aria-hidden="true">
+            <div class="window">
+              <div class="window-bar">
+                <span class="dots"><i></i><i></i><i></i></span>
+                <span class="window-title">Claude Code — мой-ролик</span>
+              </div>
+              <div class="window-body">
+                <p class="prompt"><span>›</span> Сделай ролик по проекту Kinetic Type: «3 ошибки новичка в монтаже»</p>
+                <p class="muted">Читаю SKILL.md и шаблон проекта…</p>
+                <ul class="checklist">
+                  <li class="done">Стиль и правила анимации из проекта</li>
+                  <li class="done">Титры и переходы по шаблону</li>
+                  <li class="done">Звуки и шрифты из архива</li>
+                  <li class="run">Рендер 1080 × 1920</li>
+                </ul>
+                <div class="input-row"><span>+</span> Опишите ролик…</div>
+              </div>
+            </div>
+            <div class="phone">
+              <div class="phone-screen">
+                <span class="phone-tag">9:16</span>
+                <p class="kinetic">
+                  <span>3</span>
+                  <span>ошибки</span>
+                  <span>новичка</span>
+                  <span class="accent">в монтаже</span>
+                </p>
+                <div class="phone-progress"><i></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="statement">
+        <div class="container">
+          <p>
+            Один проект — один готовый стиль.
+            <span class="dim"
+              >Инструкции для Claude, шаблон видео, звуки и шрифты лежат в одном архиве — не нужно
+              собирать оформление заново для каждого ролика.</span
+            >
+          </p>
         </div>
       </section>
 
       <section id="pricing" aria-labelledby="pricing-title">
         <div class="container">
-          <h2 id="pricing-title">Выберите свой пакет</h2>
-          <p class="section-lead">
-            Чем больше проектов в пакете, тем ниже цена одного проекта. Оплата разовая.
-          </p>
+          <div class="section-head">
+            <div>
+              <h2 id="pricing-title">Выберите свой пакет</h2>
+              <p class="section-lead">
+                Чем больше проектов в пакете, тем ниже цена одного проекта. Оплата разовая.
+              </p>
+            </div>
+            <a class="btn btn-secondary btn-sm" href="#how-to-buy">Как купить</a>
+          </div>
           <div class="plans">
             <article class="plan" aria-labelledby="plan-start">
               <h3 class="plan-name" id="plan-start">START</h3>
@@ -70,7 +124,7 @@
               <ul>
                 <li>1 готовый дизайн-проект</li>
               </ul>
-              <a class="btn btn-ghost btn-block" href="mailto:lasterog@mail.ru?subject=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%20%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%B0%20START%20%281%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%2C%20490%20%E2%82%BD%29" data-plan="start" aria-label="Выбрать пакет START">Выбрать</a>
+              <a class="btn btn-secondary btn-block" href="mailto:lasterog@mail.ru?subject=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%20%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%B0%20START%20%281%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%2C%20490%20%E2%82%BD%29" data-plan="start" aria-label="Выбрать пакет START">Выбрать</a>
             </article>
 
             <article class="plan" aria-labelledby="plan-pro">
@@ -82,7 +136,7 @@
                 <li>3 дизайн-проекта на выбор</li>
                 <li>Экономия 280 ₽</li>
               </ul>
-              <a class="btn btn-ghost btn-block" href="mailto:lasterog@mail.ru?subject=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%20%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%B0%20PRO%20%283%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%2C%201%20190%20%E2%82%BD%29" data-plan="pro" aria-label="Выбрать пакет PRO">Выбрать</a>
+              <a class="btn btn-secondary btn-block" href="mailto:lasterog@mail.ru?subject=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%20%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%B0%20PRO%20%283%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%2C%201%20190%20%E2%82%BD%29" data-plan="pro" aria-label="Выбрать пакет PRO">Выбрать</a>
             </article>
 
             <article class="plan" aria-labelledby="plan-business">
@@ -94,7 +148,7 @@
                 <li>5 дизайн-проектов на выбор</li>
                 <li>Экономия 660 ₽</li>
               </ul>
-              <a class="btn btn-ghost btn-block" href="mailto:lasterog@mail.ru?subject=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%20%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%B0%20BUSINESS%20%285%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2%2C%201%20790%20%E2%82%BD%29" data-plan="business" aria-label="Выбрать пакет BUSINESS">Выбрать</a>
+              <a class="btn btn-secondary btn-block" href="mailto:lasterog@mail.ru?subject=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%20%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%B0%20BUSINESS%20%285%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2%2C%201%20790%20%E2%82%BD%29" data-plan="business" aria-label="Выбрать пакет BUSINESS">Выбрать</a>
             </article>
 
             <article class="plan featured" aria-labelledby="plan-ultimate">
